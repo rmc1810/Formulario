@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css"  href="_css/estilo.css">
+   
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3>Cadastre seu Futuro e Venca mais Rápido</h3>
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <p>CADASTRO</p>
+        </div>
+        <div class="form-body">
+            <h1 class="form-title">Cadastre-se Aqui</h1>
+            <p>Sua Oportunidade de Crescer Hoje</p>
+            <form>
+                <div class="box-input">
+                    <label for="title">Nome:<span class="required-field">*</span> </label>
+                    <input type="text" id="title" name="title" class="block" minlength="1" maxlength="30" required placeholder="Digite nome completo">
+                </div>
+                <div class="box-input">
+                    <label for="price">Digite o Edereço:<span class="required-field">*</span></label>
+                    <input type="text" id="price" name="price" placeholder="Digite o endereço" class="block" required>
+                </div>
+                <div class="box-input">
+                    <label for="state">UF:<span class="required-field">*</span></label>
+                    <select id="unique_owner" name="unique_owner" required>
+                        <option value="">Selecione...</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="DF">Distrito Federal</option>
+                    </select>
+                 </div>
+                 <div class="box-input">
+                     <label for="brand">Telfone:<span class="required-field">*</span></label>
+                     <input type="number" name="telephone" id="telephone" class="block" placeholder="Digite um número para contato" required>
+                </div>
+                <div class="box-input">
+                    <label for="model">Empresa:<span class="required-field">*</span></label> 
+                    <input type="text" name="company" id="company" class="block" placeholder="Digite o nome da Empresa" required>
+                </div>
+                <div class="box-input">
+                    <label for="mileage">Ramo de Atuação:<span class="required-field">*</span></label>
+                    <input type="text" name="company" id="company" class="block" placeholder="Digite o Ramo da Empresa" required>
+                </div>
+                <div class="box-input">
+                    <label for="purchase_date">Data de Inicio das Atividades:<span class="required-field">*</span></label>
+                    <input type="date" id="purchase_date" name="purchase_date" class="block" required>
+                </div>
+                <div class="box-input">
+                    <p>Tipo de Empresa:<span class="required-field">*</span></p>
+                    <input type="radio" id="ltda" name="ltda">
+                    <label for="manual">LTDA</label>
+                    <input type="radio" id="ME" name="ME">
+                    <label for="auto">ME</label>
+                    <input type="radio" id="mei" name="mei">
+                    <label for="auto">MEI</label>
+                    <input type="radio" id="epp" name="epp">
+                    <label for="auto">EPP</label> 
+                </div>
+                <div class="optional_box">
+                    <p>Opcionais</p>
+                    <ul class="optional_list">
+                        <li><input type="checkbox" id="local" name="opcional[]" value="Local">
+                        <label for="own_place">Local Proprio</label>
+                        </li>
+                        <li><input type="checkbox" id="alugado" name="opcional[]" value="ALugado">
+                        <label for="rented">ALugado</label>
+                        </li>
+                        <li><input type="checkbox" id="casa" name="opcional[]" value="Casa">
+                        <label for="home">Casa</label>
+                        </li>
+                        <li><input type="checkbox" id="internet" name="opcional[]" value="Internet">
+                        <label for="internet_only">Internet</label>
+                        </li>
+                        
+                    </ul>
+                 </div>
+                 <div class="box-input">
+                     <p>Foto do Cadastrante:<span class="required-field">*</span></p>
+                     <input type="file" multiple accept="image/png, image/jpeg" id="images" name="images" required>
+                 </div>
+                 <input type="submit" class="btn-submit" value="cadastrar">
+
+            </form>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
